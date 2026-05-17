@@ -1,6 +1,15 @@
 # Just Zoom In
+[![Paper](https://img.shields.io/badge/Paper-arXiv%3A2603.25686-b31b1b.svg)](https://arxiv.org/abs/2603.25686)
+[![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E.svg)](https://huggingface.co/datasets/pcvlab/justzoomin)
+[![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://osupcvlab.github.io/just-zoom-in/)
 
-Clean training and evaluation repo for JustZoomIn. This repository contains only the runtime code needed to train, evaluate checkpoints, and visualize checkpoint predictions. Dataset creation, filtering, copying, and sequence-generation scripts are intentionally not included.
+![Just Zoom In Dataset Preview](assets/justzoomin_trial_zoom.gif)
+
+Just Zoom In is a cross-view geo-localization framework that localizes a street-view image by autoregressively zooming into a city-scale satellite map. Instead of treating geo-localization as a retrieval problem over fixed satellite crops, the model performs sequential coarse-to-fine spatial reasoning: it starts from a broad overhead view and predicts a short sequence of zoom decisions until it reaches a terminal map cell at the target resolution.
+
+This repository contains the training, evaluation, and visualization code for Just Zoom In, including teacher-forced training, autoregressive validation, checkpoint evaluation, and qualitative visualization of predicted zoom sequences.
+
+
 
 ## Environment
 
@@ -30,7 +39,7 @@ The lockfile pins the CUDA 12.1 PyTorch wheels. If you need a different CUDA or 
 
 Download the dataset from Hugging Face:
 
-https://huggingface.co/datasets/pcvlab/justzoomin/tree/main
+https://huggingface.co/datasets/pcvlab/justzoomin
 
 Follow the dataset instructions there. After download/extraction, the expected local layout is:
 
@@ -150,4 +159,20 @@ evaluate_checkpoints.py
 visualize_checkpoint_sequences.py
 pyproject.toml
 uv.lock
+```
+
+## Cite
+If you use this code or dataset, please cite:
+
+```bibtex
+@article{erzurumlu2026justzoomin,
+  title={Just Zoom In: Cross-View Geo-Localization via Autoregressive Zooming},
+  author={Erzurumlu, Yunus Talha and Kwag, Jiyong and Yilmaz, Alper},
+  journal={arXiv preprint arXiv:2603.25686},
+  year={2026},
+  doi={10.48550/arXiv.2603.25686},
+  eprint={2603.25686},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
 ```
