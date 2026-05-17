@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.py[cod]
+
+checkpoints/
+dataset/
+logs/
+wandb/
+
+*.pth
+*.pt
+*.ckpt
+*.parquet
+*.csv
