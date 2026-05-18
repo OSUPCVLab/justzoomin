@@ -1,4 +1,4 @@
-# Just Zoom In
+# Just Zoom In: Cross-View Geo-Localization via Autoregressive Zooming
 [![Paper](https://img.shields.io/badge/Paper-arXiv%3A2603.25686-b31b1b.svg)](https://arxiv.org/abs/2603.25686)
 [![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E.svg)](https://huggingface.co/datasets/pcvlab/justzoomin)
 [![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://osupcvlab.github.io/just-zoom-in/)
