@@ -15,11 +15,12 @@ dependencies = [
     "pillow==12.2.0",
     "pyarrow==24.0.0",
     "pyyaml==6.0.3",
+    "setuptools>=82.0.1",
     "tiledwebmaps==0.2.0",
     "torch==2.5.1+cu121",
     "torchvision==0.20.1+cu121",
     "tqdm==4.67.3",
-    "transformers==5.8.1",
+    "transformers==4.47.1",
     "wandb==0.27.0",
 ]
 
